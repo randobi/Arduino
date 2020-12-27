@@ -10,17 +10,17 @@
  * @hardware: David Cuartielles, Aaron Hallborg
  */
 
-int pin2 = 2;
-int pin3 = 3;
-int pin4 = 4;
-int pin5 = 5;
+int pin2 = 5;
+int pin3 = 4;
+int pin4 = 3;
+int pin5 = 2;
 int inPin = 6;
 int outPin = 12;
-int timer = 400;
+int timer = 200;
 
-int state = LOW;      // the current state of the output pin
+int state = HIGH;      // the current state of the output pin
 int reading;           // the current reading from the input pin
-int previous = HIGH;    // the previous reading from the input pin
+int previous = LOW;    // the previous reading from the input pin
 
 // the follow variables are long's because the time, measured in miliseconds,
 // will quickly become a bigger number than can be stored in an int.
@@ -84,4 +84,3 @@ void loop() {
    delay(timer);
 */
 }
-
