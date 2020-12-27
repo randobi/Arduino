@@ -16,11 +16,11 @@ int pin4 = 4;
 int pin5 = 5;
 int inPin = 6;
 int outPin = 12;
-int timer = 200;
+int timer = 400;
 
-int state = HIGH;      // the current state of the output pin
+int state = LOW;      // the current state of the output pin
 int reading;           // the current reading from the input pin
-int previous = LOW;    // the previous reading from the input pin
+int previous = HIGH;    // the previous reading from the input pin
 
 // the follow variables are long's because the time, measured in miliseconds,
 // will quickly become a bigger number than can be stored in an int.
